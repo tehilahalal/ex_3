@@ -4,7 +4,7 @@ import numpy as np
 def matrix_multiply_naive(A, B):
     # check A.shape and B.shape and make sure that the matrices
     # are compatible for multiplication
-    if False: # Replace with a condition that checks compatibility
+    if A.shape[1]!=B.shape[0]: # Replace with a condition that checks compatibility
         raise ValueError("Matrix dimensions are not compatible for multiplication")
 
     result_dtype = np.result_type(A.dtype, B.dtype)
@@ -12,8 +12,8 @@ def matrix_multiply_naive(A, B):
     result = np.zeros(result_shape, dtype=result_dtype)
 
     number_of_multiplications = 0
-    # write here python loops that calculate
-    # each entry i,j in result,
-    # and also updates number_of_multiplications
+    for i in range (
+        for j in range(
+            for k in range(
                 
     return result, number_of_multiplications
